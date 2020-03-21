@@ -21,6 +21,9 @@ import java.util.List;
 @RequestMapping("/admin")
 public class TAdminController {
 
+
+
+    //master 2.0
     @Autowired
     TAdminService tAdminService;
 
