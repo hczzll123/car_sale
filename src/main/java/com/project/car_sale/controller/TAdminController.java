@@ -7,6 +7,7 @@ import com.project.car_sale.service.TAdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -33,11 +34,15 @@ public class TAdminController {
         TAdmin tAdmin = new TAdmin();
 
 
+        ArrayList<TAdmin> tAdmins = new ArrayList<>();
+
+
+
         tAdmin.setLoginAcct("heyuan1");
         tAdmin.setUserPswd("123456");
         tAdmin.setUserName("何源");
 
-
+        tAdmins.add(tAdmin);
         for (int i = 0; i < 10; i++) {
 
             tAdminService.save(tAdmin);
